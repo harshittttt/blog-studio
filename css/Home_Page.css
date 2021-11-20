@@ -1,0 +1,678 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+
+
+/* Header */
+
+/* Navigation Bar */
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+
+/* when scrolling the navigation bar */
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+    font-family: 'Baloo Bhaina 2';
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+  font-family: 'Baloo Bhaina 2';
+}
+.menu-list li a{
+  color: #ffffff;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 100px; 
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 35px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+}
+.menu-list li a:hover{
+  color: white;
+  border: 3px solid #116DFF;
+  padding: 5px;
+  border-radius: 40px;
+  background: #116DFF;
+}
+.banner{
+  background: url("https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80") no-repeat;
+  background-color: black;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.icon{
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* Navigation Bar responsiveness */
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 850px) {
+ 
+  .navbar .menu-list{
+    visibility: hidden;
+  }
+  
+}
+
+
+
+/* Body */
+
+
+/* This is blog page */
+#text-main{
+	position: absolute;
+	margin-top: -68vh;
+	margin-left: 20vh;
+	color: white;
+	line-height: 1em;
+    text-align: center;
+    font-size: 96px;
+	max-height: 100vh;
+
+	
+}
+#text-main h1{
+	font-size: 100px;
+	font-family: 'Baloo Bhaina 2';
+}
+
+#text-main p{
+	font-family: 'Baloo Bhaina 2';
+}
+
+#text-main button{
+	font-family: 'Baloo Bhaina 2';
+}
+
+#content p{
+	font-size: 20px;	
+}
+
+#GetStarted{
+	border: 1ps solid blue;
+}
+
+#content #text-main button{
+	border: 2px solid #116DFF;
+	background-color: #116DFF;
+	padding: 10px 30px 10px 30px;
+	font-size: 40px;
+	color: white;
+	border-radius: 40px;
+	transition: 0.3s;
+	
+}
+#content #text-main button:hover{
+	background-color:transparent;
+	padding: 15px 35px 15px 35px;
+	font-size: 41px;
+	cursor: pointer;
+}
+
+
+/* This is blog Page - Responsiveness */
+@media (max-width: 1250px) {
+	#text-main{
+		margin-left: 0px;
+		line-height: 1em;
+	}
+}
+
+@media (max-width: 870px) {
+	#text-main p{
+		display: none;
+	}
+	#text-main{
+		line-height: 1.2em;
+	}
+	#text-main h1{
+		font-size: 80px;
+		align-items: center;
+		margin-left: 80px;
+	}
+	
+	
+}
+@media (max-width: 775px){
+	#text-main h1{
+		margin-left: 0px;
+	}
+}
+
+
+
+
+/* Cards */
+
+.carrd{
+	  margin-left: 40px;
+	margin-right: 40px;
+}
+
+.cards{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  
+  
+}
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  background-color: #eceadb;
+  -webkit-clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0%, 100% 86%, 0px 100%);
+}
+.carousel{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.carousel .card{
+  color: #ffffff;
+  text-align: center;
+  margin: 20px 0;
+  margin-top: 50%;
+  line-height: 250px;
+  font-size: 90px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+
+.card-content{
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	transition: all 0.3s linear;
+	color: #ffffff;
+	cursor: pointer;
+	  font-family: 'Baloo Bhaina 2';
+}
+
+.card-content:hover{
+	opacity: 1;
+	transform: scale(1.07);
+	font-size: 60px;
+	
+}
+
+.card-content-1{
+	background-image: url("https://www.rosannadavisonnutrition.com/wp-content/uploads/2015/02/1684227-750x400.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card-content-2{
+	background-image: url("https://images.unsplash.com/photo-1458253756247-1e4ed949191b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+}
+
+.card-content-3{
+	background-image: url("https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80");
+}
+
+.card-content-4{
+	background-image: url("https://www.noupe.com/wp-content/uploads/2010/02/8.jpg");
+}
+
+.card-content-5{
+	background-image: url("https://en-blog.files.wordpress.com/2014/05/8314929977_36b1d58cf6_o.jpg?w=1200");
+}
+
+.owl-dots{
+  text-align: center;
+  margin-top: 40px;
+}
+.owl-dot{
+  height: 15px;
+  width: 45px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #0072bc!important;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #0072bc!important;
+}
+
+
+
+/* Sections */
+.real p{
+	/* 1,2,3,4 */
+	color: black;
+}
+
+
+.center-v {
+	/* 1,2,3,4 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-1 {
+	/* 1 */
+  height: 65vh;
+  margin: 0px 40px;
+
+}
+
+
+#section-2{
+	/* 2 */
+	background-image: url("https://www.ubp.com/files/live/sites/ubp/files/image/banner_newsroom/200124_Vignette_Web_Detail.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  height: 80vh;
+    margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+#section-4{
+	background-image: url("https://image.freepik.com/free-photo/men-s-business-fashion-outfit-flatlay-dark-background_9515-90.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 14%, 100% 100%, 0px 100%);
+  padding-top:.5rem;
+  padding-bottom:.5rem;
+  height: 75vh;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.dark-flex-center-v {
+	/* 1,3 */
+	margin-top: 50px;
+	margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+.mb-4{
+	/* 1,3 */
+	margin-bottom: 1.5rem;
+	line-height: 2;
+    font-weight: 300;
+	font-family: 'Baloo Bhaina 2';
+	font-weight: bold;
+	
+}
+
+
+.dark-text-container {
+	/* 1,3 */
+  max-width: 420px;
+}
+
+.dark-color-secondary {
+	/* 1,3 */
+  color: #0095bf;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+	font-family: 'Baloo Bhaina 2';
+	font-weight: bolder;
+}
+
+.dark-circle-img-container {
+	/* 1,3 */
+  margin-top: -220px;
+  text-align: right;
+  margin-right: 150px;
+  
+}
+
+.dark-circle-img {
+	/* 1,3 */
+  width: 500px;
+  height: 440px;
+}
+
+.rounded-circle{
+	/* 1,3 */
+border-radius:50%;
+}
+
+.circle-content {
+	/* 2,4 */
+  background-color: white;
+  color: #6c6c6c;
+  height: 100vh;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding: 65px 71px 65px 80px;
+  border-radius: 50%;
+  width: 500px;
+  height: 450px;
+}
+
+.circle-title {
+	/* 2,4 */
+  color: #cc0064;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  line-height: 1.2;
+  text-align: center!important;
+  font-family: 'Baloo Bhaina 2';
+	font-weight: bolder;
+}
+
+.circle-subtitle {
+	/* 2,4 */
+  color: #0095bf;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center!important;
+  line-height: 2;
+  font-weight: 300;
+  font-family: 'Baloo Bhaina 2';
+  font-weight: bold;
+}
+
+.circle-para{
+	/* 2,4 */
+	line-height: 2;
+    font-weight: 300;
+	margin-top: 0;
+    margin-bottom: 1rem;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+	font-family: 'Baloo Bhaina 2';
+	font-weight: bold;
+}
+
+@media (max-width: 1119px) {
+	.dark-circle-img-container {
+		
+		text-align: right;
+		margin-right: 0px;
+	}
+	
+
+  
+  .dark-circle-img {
+		width: 300px;
+		height: 300px;
+	}
+}
+@media (max-width: 829px) {
+	body{
+		width: auto;
+	}
+	
+	.carousel{
+		margin-top: -20px;
+	}
+	.dark-circle-img-container {
+		margin-top: 0px;
+		text-align: right;
+		margin-right: 0px;
+	}
+	.section-1, section-3{
+		height: auto;
+	}
+	#section-2, #section-4{
+		height: auto;
+		width: auto;
+	}
+}
+
+
+
+
+.circle-content a{
+	text-decoration: none;
+	color: #c5368ce0;
+	font-family: 'Baloo Bhaina 2';
+	font-weight: bold;
+}
+.dark-flex-center-v a{
+	text-decoration: none;
+	color: #4d8ccde0;
+	font-family: 'Baloo Bhaina 2';
+	font-weight: bold;
+}
+
+
+
+/* Footer */
+.footerrr{
+	color: #d9d9d9;
+
+}
+
+footer{
+  
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.footer-content{
+  display: flex;
+}
+.footer-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+  color: white;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+/* Footer Responsiveness */
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .footer-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .footer-content .box{
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 1023px) {
+	.carousel .card .card-content{
+		font-size: 70px;
+	}
+}
+
+@media (max-width: 700px) {
+	.carousel .card .card-content{
+		font-size: 50px;
+	}
+}
+
+@media (max-width: 600px) {
+	.carousel .card .card-content{
+		font-size: 80px;
+	}
+}

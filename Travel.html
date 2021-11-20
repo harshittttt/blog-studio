@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ 
+<title>Travel</title>
+
+<!--Bootstrap-->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	
+<!--Jquery-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    
+	
+<!--FontAwesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
+	
+	
+<!--OwlCarousel-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+<!--Animation-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!--CSS-->
+	<link rel="stylesheet" href="css/Travel.css">
+	
+
+<!--Fevicon-->
+	<link rel="icon" 
+      type="image/png" 
+      href="https://barineauac.com/wp-content/uploads/2018/01/favicon.png">	
+
+
+</head>
+
+
+
+
+<body>
+
+
+<div class="h">
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        
+		<a href="#">Blog-Studio</a>
+      </div>
+      <ul class="menu-list">
+        
+        <li><a href="Home_Page.html">Home</a></li>
+        
+        
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+  <div class="banner"></div>
+
+</div>
+
+
+<div id="content">
+	<div id="text-main">
+		<p class ="firstLine"  data-aos="fade-left" data-aos-duration="2000">A TEAM OF PROFESSIONAL TRAVEL EXPERTS</P>
+		<h1 data-aos="fade-up" data-aos-duration="1000">Explore <span class="theWorld">The World</span></h1>
+	
+		<p>Discover the platform that gives you the freedom to create, design,
+			manage and develop your web presence exactly the way you want.</p>
+		
+		<button data-aos="fade-right" data-aos-duration="1000" onclick="getStarted()">Get Started</button>
+	
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--Main content-->
+
+
+
+
+
+<section id="ourTours">
+	
+	<div class="headerOurTours" data-aos="fade-up">
+			<div>Our Hot Tours</div>
+	</div>
+	
+	<div class="tourNames">
+			<div class="holidayImages">
+				<div class="image">
+					<span>
+						<img src="https://getwalls.io/media/large/2015/05/road-trip-to-dark-mountains-large-1184187206.jpg">
+					</span>
+					<div class="textImage" data-aos="fade-right" onclick="ComingSoon()">Mountain Holiday</div>
+					<div class="contentOnHover">Mountain Trip is the premier source for providing <br>climbers with experienced climbing guides <br>and the highest quality customer service in the industry.</div>
+				</div>
+
+				<div class="image">				
+					<span>
+						<img src="https://p0.pikist.com/photos/717/342/beach-black-beach-dark-beach-sea-mountains-reef-ocean-nature-ground.jpg">
+					</span>
+					<div class="textImage" data-aos="fade-down" onclick="ComingSoon()">Beach Holidays</div>
+					<div class="contentOnHover">Planning a memorable Beach starts with <br>choosing an exciting destination that matches your<br> dreamy expectations of an ideal getaway.</div>
+				</div>		
+				
+				<div class="image">
+					<span>
+						<img src="https://p1.pxfuel.com/preview/792/2/440/hot-air-balloon-blue-sky-dark.jpg">
+					</span>
+					<div class="textImage" data-aos="fade-left" onclick="ComingSoon()">Balloon Flights</div>
+					<div class="contentOnHover">Hot air balloon ride in India is a perfect <br>experience to witness some of the most beautiful views<BR> that nature has to offer.</div>
+				</div>
+			</div>
+			
+	</div>
+</section>
+
+
+
+
+
+<!--India-->
+
+
+
+
+<section id="ourTours">
+	
+	<div class="headerOurTours" data-aos="fade-up">
+			<div>India</div>
+	</div>
+	
+	<div class="tourNames">
+			<div class="holidayImages">
+				<div class="image indiaImage">
+					<span>
+						<img src="https://www.holidaytravel.co/uploaded_files/product_img/2332529935f6dbb4928cf7.jpg">
+					</span>
+						<div class="indiaTextImage">
+							<div>MANALI</div>
+							<p>Apr 17, 2020</p>
+							<button class="textImageButton" onclick="Manali()">Continue</button>
+						</div>
+				</div>
+				
+				<div class="image indiaImage">
+					<span>
+						<img src="https://wallpaperaccess.com/full/3068226.jpg">
+					</span>
+					<div class="indiaTextImage">
+							<div>GOA</div>
+							<p>Jan 16, 2020</p>
+							<button class="textImageButton" onclick="Goa()">Continue</button>
+					</div>
+				</div>
+
+				<div class="image indiaImage">
+					<span>
+						<img src="https://image3.mouthshut.com/images/Restaurant/Photo/-11646_10820.jpg">
+					</span>
+					<div class="indiaTextImage">
+							<div>GANGTOK</div>
+							<p>Sept 08, 2020</p>
+							<button class="textImageButton" onclick="Gangtok()">Continue</button>
+					</div>
+				</div>
+				
+				<div class="image indiaImage">				
+					<span>
+						<img src="https://mcmscache.epapr.in/post_images/website_350/post_16725189/full.jpg">
+					</span>
+					<div class="indiaTextImage">
+							<div>SHIMLA</div>
+							<p>May 22, 2020</p>
+							<button class="textImageButton" onclick="Shimla()">Continue</button>
+					</div>
+				</div>			
+				
+			</div>
+			
+	</div>
+</section>
+
+
+
+
+<!--Sepration-->
+
+<section class="sepration">
+		<div class="seprationContent">
+			<div class="seprationContentHeader" data-aos="fade-down" data-aos-duration="3000">First-class Impressions <br>are Waiting for You!</div>
+			<div class="seprationContentLine" data-aos="fade-right" data-aos-duration="1000">Our website offers travelers various tours and excursions with destinations<br> all over the world. Browse our website to find your dream tour!</div>
+			<button data-aos="fade-up" data-aos-duration="500" onclick="experiencetheworld()">EXPERIENCE THE WORLD</button>
+		</div>
+</section>
+
+
+
+
+
+
+<!--International-->
+
+
+
+
+<section id="ourTours">
+	
+	<div class="headerOurTours" data-aos="fade-up">
+			<div>International</div>
+	</div>
+	
+	<div class="tourNames">
+			<div class="holidayImages">
+				<div class="image indiaImage">
+					<span>
+						<img src="https://wallsdesk.com/wp-content/uploads/2016/10/Singapore-HD-Wallpaper.jpg">
+					</span>
+						<div class="indiaTextImage">
+							<div>SINGAPORE</div>
+							<p>5 Locations</p>
+							
+							<button class="textImageButton" onclick="ComingSoon()">Continue</button>
+						</div>
+				</div>
+
+				<div class="image indiaImage">				
+					<span>
+						<img src="https://wonderfulengineering.com/wp-content/uploads/2016/01/thailand-wallpaper-2.jpg">
+					</span>
+					<div class="indiaTextImage">
+							<div>THAILAND</div>
+							<p>7 Locations</p>
+							<button class="textImageButton" onclick="ComingSoon()">Continue</button>
+					</div>
+				</div>			
+				
+				<div class="image indiaImage">
+					<span>
+						<img src="https://www.meeting-point.com/wp-content/uploads/2019/09/America.jpg">
+					</span>
+					<div class="indiaTextImage">
+							<div>AMERICA</div>
+							<p>6 Locations</p>
+							<button class="textImageButton" onclick="ComingSoon()">Continue</button>
+					</div>
+				</div>
+				
+				<div class="image indiaImage">
+					<span>
+						<img src="https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2018/04/Toledo-Spain-www.istockphoto.com_gb_photo_toledo-spain-gm464975554-58756952-SeanPavonePhoto.jpg">
+					</span>
+					<div class="indiaTextImage">
+							<div>SPAIN</div>
+							<p>4 Locations</p>
+							<button class="textImageButton" onclick="ComingSoon()">Continue</button>
+					</div>
+				</div>
+			</div>
+			
+	</div>
+</section>
+
+
+
+<!--footer-->
+
+<div class="foot">
+	<div><span class="far fa-copyright"></span> Copyright | Blog-Studio | <a href="Home_Page.html">blogstudio.com</a></div>
+
+</div>
+
+
+    
+<script>
+
+	function getStarted(){
+		window.scrollBy(0, 700);
+	}
+	
+	function Manali(){
+		window.location.href = "blogpost.html";
+	}
+	function Goa(){
+		window.location.href = "blogspot2.html";
+	}
+	function Gangtok(){
+		window.location.href = "blogspot3.html";
+	}
+	function Shimla(){
+		window.location.href = "blogspot1.html";
+	}
+	
+	function experiencetheworld(){
+		window.scrollBy(0, 600);
+	}
+	
+	function ComingSoon(){
+		window.location.href = "ComingSoon.html";
+	}
+
+    const navbar = document.querySelector(".navbar");
+   
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+	
+</script>
+
+
+<script>
+  AOS.init();
+</script>

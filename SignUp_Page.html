@@ -1,0 +1,359 @@
+<!Doctype html>
+<html>
+<head>
+
+		<title>Sign Up</title>
+
+<!--Bootstrap-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<!--Animation-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!--CSS-->
+	<link rel="stylesheet" href="css/SignUp_Page.css">
+
+<!--Fevicon-->
+	<link rel="icon" 
+      type="image/png" 
+      href="https://barineauac.com/wp-content/uploads/2018/01/favicon.png">	
+
+		<script>
+			function f1()
+			{
+				var name=document.getElementById("i1").value;
+				var np=/(^[A-Z]{1}[a-z]+$|^[A-Z]{1}[a-z]+\s{1}[A-Z]{1}[a-z]+$)/;
+				
+				if(np.test(name))
+				{
+					document.getElementById("i1").style.color="black";
+					document.getElementById("i1").style.borderColor="lightgreen";
+					
+				}
+				else
+				{
+					document.getElementById("i1").style.color="black";
+					document.getElementById("i1").style.borderColor="red";
+					
+				}
+			}
+			function f11()
+			{
+				var name=document.getElementById("i1").value;
+				if(name.length==0)
+				{
+					document.getElementById("i1").style.borderColor="red";
+		
+				}
+				
+				else{
+				var name=document.getElementById("i1").value;
+				var np=/(^[A-Z]{1}[a-z]+$|^[A-Z]{1}[a-z]+\s{1}[A-Z]{1}[a-z]+$)/;
+				
+				if(np.test(name))
+				{
+					document.getElementById("i1").style.color="green";
+					document.getElementById("i1").style.borderColor="black";
+				}
+				else{
+					document.getElementById("i1").style.color="red";
+					document.getElementById("i1").style.borderColor="black";
+				}
+				}
+			}
+			
+			function f2()
+			{
+				var name=document.getElementById("i2").value;
+				var mp=/^[0-9]{10}$/;
+				var mpedited=/^[0-9]+$/;
+				if(mp.test(name) || mpedited.test(name))
+				{
+					document.getElementById("i2").style.color="black";
+					document.getElementById("i2").style.borderColor="lightgreen";
+					
+				}
+				else
+				{
+					document.getElementById("i2").style.color="black";
+					document.getElementById("i2").style.borderColor="red";
+					
+				}
+			}
+			function f22()
+			{
+				var mobile=document.getElementById("i2").value;
+				if(mobile.length==0)
+				{
+					document.getElementById("i2").style.borderColor="red";
+					
+				}
+				else{
+				var name=document.getElementById("i2").value;
+				var mp=/^[0-9]{10}$/;
+				
+				if(mp.test(mobile))
+				{
+					document.getElementById("i2").style.color="green";
+					document.getElementById("i2").style.borderColor="black";
+				}
+				else
+				{
+					document.getElementById("i2").style.color="red";
+					document.getElementById("i2").style.borderColor="black";
+				}
+				}
+				
+			}
+			function f3()
+			{
+				var email=document.getElementById("i3").value;
+				var ep=/^\w+[0-9]*[#.]?[a-z0-9]+(@)[a-z]+(.com|.in|.edu.in)$/;
+				var epedited=/^[a-z]+/;
+				if(ep.test(email) || epedited.test(email))
+				{
+					document.getElementById("i3").style.color="black";
+					document.getElementById("i3").style.borderColor="lightgreen";
+				}
+				else
+				{
+					document.getElementById("i3").style.color="Black";
+					document.getElementById("i3").style.borderColor="red";
+				}
+			}
+			function f33()
+			{
+				var email=document.getElementById("i3").value;
+				if(email.length==0)
+				{
+					document.getElementById("i3").style.borderColor="red";
+					
+				}
+				else{
+				var email=document.getElementById("i3").value;
+				var ep=/^\w+[0-9]*[#.]?[a-z0-9]+(@)[a-z]+(.com|.in|.edu.in)$/;
+				
+				if(ep.test(email))
+				{
+					document.getElementById("i3").style.color="green";
+					document.getElementById("i3").style.borderColor="black";
+				}
+				else
+				{
+					document.getElementById("i3").style.color="red";
+					document.getElementById("i3").style.borderColor="black";
+				}
+				}
+			}
+			
+			function f4()
+			{
+				var password=document.getElementById("i4").value;
+				var p1=/[A-Z]+/;
+				var p2=/[a-z]+/;
+				var p3=/[0-9]+/;
+				var p4=/[!@#$%^&*]/;
+				var l=password.length;
+				
+				if(p1.test(password) && p2.test(password) && p3.test(password) && p4.test(password) && 6<=l && l<=20)
+				{
+					document.getElementById("i4").style.color="black";
+					document.getElementById("t4").style.display="none";
+					document.getElementById("i4").style.borderColor="lightgreen";
+				}
+				else
+				{
+					document.getElementById("i4").style.color="black";
+					
+				}
+			}
+			function f44()
+			{
+				var password=document.getElementById("i4").value;
+				if(password.length==0)
+				{
+					document.getElementById("i4").style.borderColor="red";
+					document.getElementById("t4").style.display="none";
+					
+				}
+				else{
+				var password=document.getElementById("i4").value;
+				var p1=/[A-Z]+/;
+				var p2=/[a-z]+/;
+				var p3=/[0-9]+/;
+				var p4=/[!@#$%^&*]/;
+				var l=password.length;
+				
+				if(p1.test(password) && p2.test(password) && p3.test(password) && p4.test(password) && 6<=l && l<=20)
+				{
+					document.getElementById("i4").style.color="green";
+					document.getElementById("i4").style.borderColor="black";
+				}
+				else
+				{
+					if((l<6) || (p1.test(password) && p2.test(password) && p3.test(password) && p4.test(password) && 6<=l && l<=20))
+					{
+						document.getElementById("t4").style.color="red";
+						document.getElementById("i4").style.color="red";
+						document.getElementById("t4").style.fontSize="10px";
+						document.getElementById("t4").innerHTML="Password Length is Too Less";
+					}
+					else
+					{
+						document.getElementById("t4").style.color="red";
+						document.getElementById("i4").style.color="red";
+						document.getElementById("t4").style.fontSize="10px";
+						document.getElementById("t4").innerHTML="Password Should Have an Uppercase, a Lowercase, a Digit and a Special Character";
+					}
+				}
+				}
+			}
+			
+			
+			
+			
+			
+			
+			function f5()
+			{
+				var confirmpass=document.getElementById("i5").value;
+				var password=document.getElementById("i4").value;
+				
+				if(password===confirmpass)
+				{
+					document.getElementById("i5").style.color="black";
+					document.getElementById("i5").style.borderColor="Green";
+					
+				}
+				else
+				{
+					document.getElementById("i5").style.color="black";
+					document.getElementById("i5").style.borderColor="red";
+					document.getElementById("t5").style.color="red";
+					
+				}
+			}
+			function f55()
+			{
+				var confirmpass=document.getElementById("i5").value;
+				if(confirmpass.length==0)
+				{
+					document.getElementById("i5").style.borderColor="red";
+					
+				}
+				
+				var confirmpass=document.getElementById("i5").value;
+				var password=document.getElementById("i4").value;
+				
+				if(password===confirmpass)
+				{
+					document.getElementById("i5").style.color="green";
+					document.getElementById("i5").style.borderColor="black";
+					
+				}
+				else
+				{
+					document.getElementById("i5").style.color="red";
+					document.getElementById("i5").style.borderColor="black";
+					
+				}
+			}
+			function f6()
+			{
+				
+                    window.alert("Successfully Signed up.");
+                
+                
+			}
+			
+			
+		</script>
+	</head>
+	
+	<body>
+
+<div style="margin-top: 15px;" class="Header">
+			<div class="signUp" data-aos="fade-down">Sign Up</div>
+			<div class="alreadyAccount" data-aos="fade-right">Already have an account? <a href="#">Sign in</a></div>
+</div>
+<br><br>
+
+		
+<div class="container mainn" style="display: flex;align-items: center;justify-content: center;">
+	<div class="row form">
+		<table cellspacing="5" cellpadding="5">
+			<tr class="form-box">
+				<th style="text-align: left;">Name :</th>
+				<td><input type="text" id="i1" onkeyup="f1()" onblur="f11()" placeholder="Enter Your Name"></td>
+				<td id="t1"></td>
+			</tr>
+			
+			<tr class="form-box">
+				<th style="text-align: left;">Mobile :</th>
+				<td><input type="text" id="i2" maxlength="10" onkeyup="f2()" onblur="f22()" placeholder="Enter Your Phone Number"></td>
+				<td id="t2"></td>
+			</tr>
+			
+			<tr class="form-box">
+				<th style="text-align: left;">Email :</th>
+				<td><input type="text" id="i3" onkeyup="f3()" onblur="f33()"  placeholder="Enter Your Email Id"></td>
+				<td id="t3"></td>
+			</tr>
+			
+			<tr class="form-box">
+				<th style="text-align: left;">Password :</th>
+				<td><input type="password" id="i4" required onkeyup="f4()" onblur="f44()" placeholder="Enter your password"></td>
+				<td id="t4" style="font-size: 10px; max-width: 60px;"></td>
+			</tr>
+			
+			<tr class="form-box">
+				<th style="text-align: left;">Confirm Password :</th>
+				<td><input type="password" id="i5" onkeyup="f5()" onblur="f55()"  placeholder="Confirm your password"></td>
+				<td id="t5" style="font-size: 10px;"></td>
+			</tr>
+			
+			<tr>
+				<td>
+					<div class="form-box">
+						<br><button class="button btn btn-dark" style="width: 150px; height: 40px;" onclick="f6()">Sign Up</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<div class="line" style="margin-top: 20px;"></div>
+		<div class="col-3">
+		<div class="socialmedia">
+			<button data-aos="fade-left" class = "btn btn-primary mybutton" onclick="facebook()" style="width: 250px;"> Continue with <span style="font-size: 20px; font-weight: bold;">Facebook</span></button><br>
+		</div>
+		<div class="socialmedia" style="margin-top: 10%">
+			<button data-aos="fade-left" class = "btn btn-danger mybutton" style="width: 250px;">Continue with <span style="font-size: 20px; font-weight: bold;">Google</span></button>
+		</div>
+		</div>
+	</div>
+</div>
+
+<br>
+<div class="container endd">
+	<div class="row">
+		<div class="col-4">
+		</div>
+		<div class="col-4">
+			<p style="font-size: 12px; text-align: center;"> By signing up, you agree to our Terms of Use and to receive <span style="color: blue";>Blog-Studio</span> emails & updates and acknowledge that you read our<br><span style="color: blue"> Privacy Policy</span>.</p>
+		</div>
+		<div class="col-4">
+		</div>
+	</div>
+</div>
+
+
+<script>
+  AOS.init();
+</script>
+
+	</body>
+</html>

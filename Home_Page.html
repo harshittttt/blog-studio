@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<title>Blog-Studio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+<!--Jquery-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+	
+<!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>	
+
+	
+<!--OwlCarousel-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+
+<!--Animation Linking-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--Css linking-->
+	<link rel="stylesheet" href="css/Home_Page.css">
+
+
+<!--Fevicon-->
+	<link rel="icon" 
+      type="image/png" 
+      href="https://barineauac.com/wp-content/uploads/2018/01/favicon.png">	
+
+
+</head>
+
+
+
+<body>
+
+<div class="h">
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Blog-Studio</a>
+      </div>
+      <ul class="menu-list">
+        
+        <li><a href="Home_Page.html">Home</a></li>
+        <li><a href="#footerrr">About Us</a></li>
+        
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="SignUp_Page.html">Sign Up</a></li>
+      </ul>
+      
+    </div>
+  </nav>
+  <div class="banner"></div>
+
+</div>
+
+
+<div id="content">
+	<div id="text-main" data-aos="fade-up" data-aos-duration="1000"><h1>This is blog page.</h1>
+	
+		<p data-aos="fade-left" data-aos-duration="2000">Discover the platform that gives you the freedom to create, design,
+			manage and develop your web presence exactly the way you want.</p>
+		
+		<button data-aos="fade-right" data-aos-duration="1000" onclick="getStarted()">Get Started</button>
+	
+	</div>
+</div>
+
+<!--Cards-->
+
+<div class="container" style="margin: 10px 40px;">
+<div class="row">
+<div class="column">
+<div class="cards">
+<div class="wrapper">
+
+
+<div class="carousel owl-carousel">
+<div class="card card-1">
+	<p class="card-content card-content-1" onclick="Travel()">Travel</p>
+</div>
+<div class="card card-2">
+	<p class="card-content card-content-2" onclick="ComingSoon()">Food</p>
+</div>
+<div class="card card-3">
+	<p class="card-content card-content-3" onclick="ComingSoon()">Gaming</p>
+</div>
+<div class="card card-4">
+	<p class="card-content card-content-4" onclick="ComingSoon()">Fashion</p>
+</div>
+<div class="card card-5">
+	<p class="card-content card-content-5" onclick="ComingSoon()">Reading</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<script>
+      $(".carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+          0:{
+            items:1,
+            nav: false
+          },
+          600:{
+            items:2,
+            nav: false
+          },
+          1000:{
+            items:3,
+            nav: false
+          }
+        }
+      });
+    </script>
+
+<!--CardsEnd-->
+
+
+<section class="real">
+
+<!--Travel-->
+		<section class="section-1">
+			<div class="container">
+                <div class="row">
+                    <div class="col col-xl-5 col-lg-6 dark-flex-center-v dark-text-container dark-section-left"  data-aos="fade-right">
+                        <h2 class="dark-color-secondary">Travel</h2>
+                        <p class="mb-4">Find out some most amazing Places to travel in your holidays as it is the one and only way for soothing your mind after a long and stressfull Job Days.</p>
+                        <p class="text-right mb-0">
+                            <a href="" class="btn dark-btn-secondary" onclick="Travel()">Continue...</a>
+                        </p>
+                    </div>
+                    <div class="col col-xl-7 col-lg-6 dark-circle-img-container">
+                        <img src="https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg" alt="Image" class="rounded-circle dark-circle-img">
+                    </div>
+                </div>
+            </div>
+		</section>
+<!--TravelEnd-->	
+	
+	
+<!--Gaming-->
+		<section id="section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="circle-content center-v">
+                            <header class="text-center">
+                                <h1 class="circle-title">Gaming</h1>
+                                <p class="circle-subtitle"  data-aos="fade-up">One Can do for short term Happiness</p>
+                            </header>
+                            <p class="circle-para"  data-aos="fade-left">When most people think of computer gaming, they envision some things that aren't exactly politically correct.</p>
+                            <p class="">
+                                <a href="#" class="btn dark-btn-secondary"  onclick="ComingSoon()">Continue...</a>
+                            </p>
+
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+        </section>
+
+<!--GamingEnd-->
+
+<!--Food-->
+
+		<div class="container" style="margin: 0px 40px;">
+                <div class="row">
+                   <div class="col col-xl-5 col-lg-6 dark-flex-center-v dark-text-container dark-section-left"  data-aos="fade-right">
+                        <h2 class="dark-color-secondary">Food</h2>
+                        <p class="mb-4">A foodie is someone who posts excessive amounts of food pictures on social media accounts and will drive 3 hours to eat a single cronut. So do you think you are one of them...?</p>
+                        <p class="text-right mb-0">
+                            <a href="#" class="btn dark-btn-secondary" onclick="ComingSoon()">Continue...</a>
+                        </p>
+                    </div>
+                    <div class="col col-xl-7 col-lg-6 dark-circle-img-container">
+                        <img src="https://i1.wp.com/www.eatthis.com/wp-content/uploads/2018/04/healthy-foods-fats-carbs.jpg?fit=1024%2C750&ssl=1" alt="Image" class="rounded-circle dark-circle-img">
+                    </div> 
+                </div>
+            </div>
+
+<!--FoodEnd-->
+
+<!--Fashion-->
+		<section id="section-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="circle-content center-v">
+                            <header class="text-center">
+                                <h1 class="circle-title">Fashion</h1>
+                                <p class="circle-subtitle"  data-aos="fade-up" >Fashion is a Way to define oneself</p>
+                            </header>
+                            <p class="circle-para"  data-aos="fade-left">Fashion is a form of self-expression and autonomy at a particular period and place and in a specific context, of clothing, footwear, lifestyle, accessories, makeup, hairstyle, and body posture.</p>
+                            <p class="">
+                                <a href="#" class="btn dark-btn-secondary" onclick="ComingSoon()">Continue...</a>
+                            </p>
+
+                        </div>
+                    </div>
+					
+                </div>
+            </div>
+        </section>
+
+<!--FashionEnd-->
+</section>
+
+<!--Footer-->
+    <footer id="footerrr" style="color: #d9d9d9;">
+      <div class="footer-content">
+        <div class="left box">
+          <h2 style="border-bottom: 4px solid red">About us</h2>
+          <div class="content">
+            <p>In 2021, 4 students of Chitkara University made this website while studing. At Blog-Studio, we believe there is a better way to represent blogs. Our mission is to make it more valuable, less complex way where viewers comes to read blogs and not to waste time in scrolling.</p>
+            <div class="social">
+              <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://twitter.com"><span class="fab fa-twitter"></span></a>
+              <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+              <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2 style="border-bottom: 4px solid red;">Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Chitkara University, Punjab</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">999999999</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">abc@example.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2 style="border-bottom: 4px solid red">Feedback</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email</div>
+                <input type="email" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message</div>
+					<textarea rows="2" cols="25" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit"> <a href="#">Blog-Studio</a> | </span>
+          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+ 
+
+
+
+
+
+
+  <script>
+  
+  function getStarted(){
+		window.scrollBy(0, 700);
+  }
+  
+  function Travel(){
+	window.open("Travel.html");
+  }
+  
+  function ComingSoon(){
+		window.location.href = "ComingSoon.html";
+	}
+
+    const navbar = document.querySelector(".navbar");
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+  
+  <script>
+  AOS.init();
+</script>
+
+
+</body>
+</html>

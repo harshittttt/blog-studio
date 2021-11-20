@@ -1,0 +1,104 @@
+/* Header */
+.Header{
+	text-align: center;
+}
+	
+/* SignUp */
+.signUp{
+	font-size: 70px;
+	margin-bottom: 17px;
+	font-family: sans-serif;
+	margin-top: -10px;
+	font-weight: bold;
+}
+
+#i1, #i2, #i3, #i4, #i5{
+			border-style: none;
+			border-bottom: 2px solid black;
+			background-color: transparent;
+			padding:10px;
+			outline: none;
+			border-radius: 0%;
+			width: 300px;
+}
+
+.alreadyAccount{
+	font-family: Madefor-Text;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Sepration Line */
+.line{
+	width: 0px;
+	height: 330px;
+	border: 1px dotted black;
+}
+
+/* Facebook, Google */
+.socialmedia{
+	margin-top: 75%;
+}
+
+.mybutton{
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+ }
+ 
+.mybutton:hover {
+  color: black;
+  background: white;
+  font-weight: bold;
+}
+
+.center{
+  text-align: center;
+}
+
+.form-input {
+  padding: 0px 5px;
+  padding-top: 3px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0 13px;
+  font-family: var(--font1);
+}
+
+.form-box input, textarea{
+  width: 15vw;
+  padding: 0px 6px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid var(--main-bg-color);
+    border-radius: 5px;
+}
+
+.signUp{
+	width: 100%;
+}
+		
+		/* Responsiveness */
+		@media only screen and (max-width: 995px){
+
+			.line{
+				display: none;
+			}
+
+			.mainn,.row{
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+			}
+			.container{
+				text-align: center;
+				display: flex;
+				align-items: center;
+			}
+			
+			.socialmedia{
+				margin-left: -75%;
+			}
+
+		}
